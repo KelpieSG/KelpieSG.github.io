@@ -1,0 +1,43 @@
+body {
+    background-color: white;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: black;
+    padding:3.5%;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 ;
+    overflow: hidden;
+    
+  }
+
+nav li{
+    display: inline-block;
+    padding-top: 2%;
+    margin-left: 70px;
+    position: relative;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}   
+
+section {
+    background-color: white;
+    padding: 94%;
+}
+section h1{
+    color:black;
+}
+footer {
+    background-color: black;
+    padding: 2.5%;
+}
