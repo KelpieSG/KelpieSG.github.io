@@ -1,0 +1,218 @@
+/* Basic styling for the body */
+html,body {
+    background-color: #141414; /* Background color*/
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    background-color: #433F59; /* Background color*/
+    padding: 10px 0;
+}
+
+h1 {
+    color: #ffffff; /* text color */
+    font-size: 60px; /* Font size  */
+    line-height: 5; /* Line height  */
+    margin: 20px 0; /* Vertical spacing */
+    text-align: center;
+}
+
+/* Styling the navigation links */
+.nav_links {
+    background-color: #433F59; /* Background color*/
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    margin: 0;
+    padding: 10px 0;
+}
+
+.nav_links li {
+    margin: 0 20px; /* Space between each link */
+}
+
+.nav_links a {
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underlines */
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.nav_links a:hover {
+    background-color: #857DB1; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+    border-radius: 5px; /* Rounded corners for hover background */
+}
+
+/* Styling for responsiveness */
+@media (max-width: 768px) {
+    .nav_links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_links li {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+/* General styles for the about me page */
+.about-section {
+    width: 100%; /* Full width of the page */
+    background-color: #141414; /*  background color */
+    padding: 50px 0; 
+    text-align: center; /* Center the text */
+}
+
+/* Style for the content within the section */
+.about-me {
+    width: 60%; /* Limit the content width to 60% of the page */
+    margin: 0 auto; /* Center the content horizontally */
+    background-color: rgb(31, 31, 31); /*  background color inside content */
+    padding: 20px; 
+    border-radius: 10px; /* Rounded corners for the content box */
+    box-shadow: 0 4px 8px rgba(31, 31, 31); /* Optional: subtle shadow */
+}
+
+.about-me p {
+    font-size: 18px; /* Font size for the paragraph */
+    color: #ffffff; /* Text color */
+    line-height: 1.6; /* Line spacing */
+}
+
+
+
+
+/* General styles for the form container */
+form {
+    max-width: 600px; /* Limit form width */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none; 
+}
+
+/* Styling form rows */
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Styling the labels */
+.col-25 {
+    flex: 1; /* Make labels smaller */
+    padding-right: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling the inputs, textareas */
+.col-75 {
+    flex: 3; /* Inputs take more space */
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    resize: none; /* Prevent textarea from being resized */
+}
+
+textarea {
+    height: 150px; /* Set a fixed height for the textarea */
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    background-color: #433F59;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #857DB1; /* hover color */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-25, .col-75 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+p {
+    color: #ffffff; /* text color */
+    font-size: 18px; /* Font size  */
+    line-height: 1.6; /* Line height  */
+    margin: 20px 0; /* Vertical spacing */
+    text-align: center;
+}
+
+section img{
+    display: block;
+    margin: 20px auto;
+    max-width: 100%; /* Makes the image responsive */
+    height: auto;
+}
+
+/* Styling for footer */
+footer {
+    background-color: #433F59; /*  footer background */
+    color: #ffffff; /* text color */
+    padding: 20px 0; /* Vertical padding */
+    text-align: center; /* Center-align all content */
+    font-size: 16px;
+    margin-top: auto;
+}
+
+/* Styling for footer content container */
+.footer-bottom {
+    max-width: 1200px; /* Center container with a max width */
+    margin: 0 auto;
+}
+
+
+
+.footer-bottom .social-links a:hover {
+    color: #857DB1; /* Hover color */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    footer {
+        font-size: 14px; /* Slightly smaller font for smaller screens */
+    }
+    .footer-bottom .social-links {
+        gap: 10px; /* space between icons */
+    }
+}

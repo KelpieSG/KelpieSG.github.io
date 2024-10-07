@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feng's Portfolio</title>
+    <link rel="stylesheet" href="public\style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="Project.html">Project</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <form action = "action_page.php">
+
+            <div class="row">
+                <div class="col-25">
+                  <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Enter First Name">
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Enter Last Name">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="email">Email</label>
+                </div>
+                <div class="col-75">
+                  <input type="email" id="email" name="email" placeholder="Enter Email">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="comment">Comment</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="comment" name="comment" placeholder="Leave Your Message Here" style="height:200px"></textarea>
+                </div>
+              </div>
+
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            
+
+        </form>
+
+    </section>
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Feng's Portfolio. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/your-profile" target="_blank">GitHub</a></li>
+                <li><a href="feng.pan@ontariotechu.net">feng.pan@ontariotechu.net</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
